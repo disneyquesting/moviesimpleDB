@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Quick Movie Lookup</title>
+    <link rel='stylesheet' href="./css/style.css">
+    {{!-- <link rel="icon" href="./img/mountainicon.png"> --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet"> 
+    </head>
+</html>
+<body>
+    {{>header}}
+
+    <div class="maincontent">
+        <div class="bodyblock">
+                 <div class="sitecontent">
+                     <div class="whatdoyouwant" id="whatdoyouwant">
+                         <h3>What film do you want to know about?</h3>
+                     </div>
+                     <div class="forminfo">
+                        <form>
+                         <input placeholder="movie">
+                         <button>Submit</button>
+                     </form>
+                     </div>
+                     <div class="moviecard">
+                         <div class="movietitle"><h2 id="movietitle" ></h2> <h3 id="movieyear" class="movieyear"></h3><br></div>
+                            <div class="poster"><img src="" id="movieposter" class="posterimage">
+                             
+                            </div>
+                            <div class="movieinfo">
+                                    <p id="moviedirector" class="moviedirector"></p>
+                                     <p id="movieactors" class="movieactors"></p>
+                                   
+                                    <p id="movieplot" class="movieplot"></p><br>
+                                    
+                                     
+                            </div>
+                     </div>
+        </div>
+     </div>
+    </div>
+    
+    {{!-- {{>footer}} --}}
+    <script src="./js/app.js"></script>
+</body>
