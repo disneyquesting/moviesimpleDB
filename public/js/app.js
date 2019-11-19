@@ -28,6 +28,7 @@ moviesSearch.addEventListener('submit',(e) => {
                 document.getElementById("moviedirector").innerHTML = "Directed by " + data.director
                 document.body.style.background = 'linear-gradient(to right bottom, rgba(1,1,2,1),rgba(21,12,20,1), rgba(38,18,24,.95), rgba(52,24,19,0.95), rgba(57,36,8,0.98)),url("' + data.poster + '")';
                 document.body.style.backgroundSize = 'cover'
+                document.body.style.backgroundPosition = "center center"
             }
         })
     })
