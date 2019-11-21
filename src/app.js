@@ -5,6 +5,8 @@ const hbs = require('hbs')
 const movieSearch = require('./utils/moviesearch.js')
 const app = express()
 
+const port = process.env.PORT || 3000
+
 const publicPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -37,6 +39,6 @@ app.get('*', (req,res) => {
     res.send("404 Page Not Found")
 })
 
-app.listen(3000, ()=> {
-    console.log("Server init complete")
+app.listen(port, ()=> {
+    console.log("Server init complete is up on port " + port)
 })
